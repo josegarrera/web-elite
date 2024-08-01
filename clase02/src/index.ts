@@ -60,14 +60,14 @@ const buildCardElement = () => {
   return card;
 };
 
-const buildImageElement = (character: any) => {
+const buildImageElement = (character: Character) => {
   const img = document.createElement('img');
   img.src = character.image;
   img.alt = `${character.name} Image`;
   return img;
 };
 
-const buildTitleElement = (character: any) => {
+const buildTitleElement = (character: Character) => {
   const name = document.createElement('h3');
   name.textContent = character.name;
   return name;
